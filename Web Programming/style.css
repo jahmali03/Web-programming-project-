@@ -1,0 +1,373 @@
+p{font-weight: bold;
+    font-size: 18px;}
+
+a span {color:rgb(255, 101, 30);}
+   
+body { 
+   margin: 50px;
+   font-family: Arial;
+   background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAjYJjPRdcc9vVuOipb7tTpe4I9_vQwmkUWw&usqp=CAU");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position:center center;
+   background-attachment:fixed;
+  }
+
+.center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+      }
+ /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding-left: 0px;
+}
+
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3b589883;
+  color: white;
+}
+
+.twitter {
+  background: #55acee75;
+  color: white;
+}
+
+.google {
+  background: #dd4c3983;
+  color: white;
+}
+
+.linkedin {
+  background: #007cb57a;
+  color: white;
+}
+
+.youtube {
+  background: #bb00007a;
+  color: white;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  margin-top: 400px;
+  border: 16px white solid;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+* {box-sizing: border-box;}
+
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: rgb(255, 101, 30);
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin-bottom: 100px;}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width:800px;
+  position: relative;
+  margin: 400px 400px 0 500px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(255, 101, 30);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  background-color: rgba(250, 232, 224, 0.479);
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 0 0 0;
+  position: absolute;
+  height: auto;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: rgb(255, 101, 30);
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  user-select: none;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color:rgb(255, 101, 30) ;
+  border-radius: 25%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  user-select: none;
+}
+
+.active, .dot:hover {
+  background-color: #9b2a08;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.container {
+
+  border: 1px solid rgb(255, 101, 30);
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 16px;
+  padding-top: 50px;
+  margin: 16px;
+  margin-right: 150px;
+  margin-left: 150px
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  .container {
+      text-align: center;
+  }
+  .container img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+.containeri {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.containeri img {vertical-align: middle;}
+
+.containeri .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+.checked {
+  color: orange;
+}
+
+h3{
+  background-color: rgb(255, 255, 255);
+  background-size: auto;
+
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(255, 234, 234);
+  color: white;
+  text-align: center;
+}
